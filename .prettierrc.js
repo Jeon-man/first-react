@@ -1,6 +1,7 @@
 var tsOption = {
-  arrowParens: 'always',
-  jsxSingleQuote: false,
+  arrowParens: 'avoid',
+  jsxSingleQuote: true,
+  bracketSameLine: true,
   singleQuote: true,
   semi: true,
   bracketSpacing: true,
@@ -9,6 +10,9 @@ var tsOption = {
   trailingComma: 'all',
   printWidth: 100,
   endOfLine: 'auto',
+  importOrder: ['^react$', '^styled-components$', '^(.*)(?:@components)(.*)$'],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
 };
 
 module.exports = {
