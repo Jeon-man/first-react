@@ -5,7 +5,7 @@ import type * as T from './type';
 function InputText({ onChange, onKeyDown, inputText }: T.InputTextProps) {
   return (
     <>
-      <input
+      <S.InputText
         type='text'
         className='inputText'
         placeholder='내용 입력'
